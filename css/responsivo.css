@@ -1,0 +1,80 @@
+:root{
+	/*PALETA 130807 - Color Hunt*/
+	--blanco:#f7f7f7;
+	--oscuro:#393e46;
+}
+
+@media only screen and (max-width: 800px){
+	#particles-js{
+		width:100%; 
+		height:100vh;
+	}
+	.imgHeader .headerInfo h2{
+		font-size: 50px;
+	}
+	.imgHeader .headerInfo hr{
+		width: 400px;
+	}
+	.imgHeader .headerInfo p{
+		font-size: 20px;
+	}
+	.menuNavegacion .btnMenu{
+		display: block;
+		position: absolute;
+		top:10px;
+		right: 50px;
+		font-size: 30px;
+		cursor:pointer;
+		color:var(--oscuro);
+	}
+	.menuNavegacion .contenedorLista{
+		position:absolute;
+		top:60px;
+		left:-100%;
+		width:100%;
+		height: calc(100vh - 65px);
+		background:var(--blanco);
+	}
+	.menuNavegacion .contenedorLista .lista{
+		width:100%;
+		height: 100%;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.menuNavegacion .contenedorLista .lista li{
+		margin: 8px 0;
+	}
+	.menuNavegacion .contenedorLista .lista li a{
+		font-size: 20px;
+	}
+	.menuNavegacion .contenedorLista .lista li a.activo{
+		background: none;
+		color:black;
+	}
+	.menuNavegacion .contenedorLista .lista li a:hover{
+		background: none;
+		color:black;
+	}
+	.mision .infoMision h2{
+		font-size: 25px;
+	}
+	.mision .infoMision p{
+		font-size: 15px;
+	}
+	.mision .misionImg{
+		width: 80%;
+	}
+	.fraseIlustre .figuraImg h4{
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.seccionGaleria .contenedorGaleria{
+		grid-template-columns: 1fr;
+		grid-auto-rows: repeat(9, 350px);
+	}
+	.listaGaleria{
+		display: none;
+	}
+}
